@@ -49,7 +49,6 @@ function App() {
           <Route path="/movies/:id" element={<MovieDetail />} />
           {/* :id คือตัวแปร — /movies/1, /movies/2, /movies/999 เข้า Route นี้หมด */}
           
-          <Route path="/about" element={<About />} />
           <Route path="*" element={<NotFound />} />{" "}
           {/* ← ดักทุกอย่างที่เหลือ ไว้ล่างสุด */}
         </Routes>
