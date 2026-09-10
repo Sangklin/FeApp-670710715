@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { movies } from "../data/data";
 import MovieCard from "../components/MovieCard";
+import MovieGallery from "../components/MovieGallery";
 
 function Home() {
   return (
@@ -14,6 +15,15 @@ function Home() {
           <MovieCard key={movie.id} title={movie.title} year={movie.year} />
         ))}
       </div>
+      <h2 className="mt-8 text-2xl font-bold text-slate-800">ดูหนังเพิ่มเติม</h2>
+      <div className="mx-auto mt-8 max-w-md">
+        <MovieGallery />
+      </div>
+      <Link to="/movies"
+            className="mt-6 inline-block rounded-lg bg-cyan-600 px-4 py-2
+                       font-semibold text-white hover:bg-cyan-700 transition">
+        ดูหนังทั้งหมด →
+      </Link>
     </div>
   );
 }
