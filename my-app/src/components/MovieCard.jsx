@@ -16,4 +16,5 @@ function MovieCard({ title, year }) {
   );
 }
 
+
 export default MovieCard;
